@@ -8,19 +8,6 @@
   <meta name="description" content="Denno Yen Cyber, Online Cyber Services in Kenya - HELB application, NSSF, SHA registration, photo editing, design, printing & more.">
   <meta name="keywords" content="Denno yen Cyber, online cyber, Kenya cyber services, HELB, NSSF, SHA, document printing, Denno Cyber">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Denno Online Cyber Services" />
-  <meta property="og:description" content="Online Cyber Services in Kenya - HELB application, NSSF, SHA registration, photo editing, design, printing & more." />
-  <meta property="og:image" content="https://yourdomain.com/Amazing.jpeg" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Denno Online Cyber Services" />
-  <meta name="twitter:description" content="Online Cyber Services in Kenya - HELB application, NSSF, SHA registration, photo editing, design, printing & more." />
-  <meta name="twitter:image" content="https://yourdomain.com/Amazing.jpeg" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -28,16 +15,23 @@
       padding: 0;
       min-height: 100vh;
 
-      background-image: url("images/Amazing.jpeg"); /* ✅ Correct relative path */
+      /* ✅ Background image for the whole page */
+      background-image: url("images/Amazing.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: center;
       color: white;
     }
+
+    /* Add slight transparent background for sections so text is readable */
+    .content-section {
+      background: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+      border-radius: 1rem;
+      padding: 2rem;
+    }
   </style>
 </head>
-
 <body>
 
   <!-- 🔵 HERO SECTION WITH VIDEO BACKGROUND -->
@@ -52,16 +46,16 @@
       <img src="myimage.jpg" alt="Denno Yen" class="w-16 h-16 rounded-full border-2 border-white shadow-md"/>
     </div>
 
-    <!-- Overlay Text Enlarged and Shifted Down -->
-    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white z-10 text-center px-4 pt-16 md:pt-24 fade-in">
+    <!-- Overlay Text -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white z-10 text-center px-4 pt-16 md:pt-24">
       <h1 class="text-5xl md:text-6xl font-extrabold">Welcome to Denno Cyber Café</h1>
       <p class="mt-4 text-xl md:text-2xl max-w-2xl mx-auto">Fast Internet, Reliable Services, Right Outside Mama Ngina University</p>
     </div>
   </div>
 
   <!-- 🛠️ SERVICES SECTION -->
-  <section class="py-10 px-4 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-center mb-6">Our Services</h2>
+  <section class="py-10 px-4 max-w-6xl mx-auto content-section">
+    <h2 class="text-2xl font-bold text-center mb-6 text-black">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-6 text-center text-black">
       <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg">
         <img src="wildbeauty.jpg" alt="Internet Access" class="w-full h-40 object-cover rounded-md mb-4">
@@ -82,8 +76,8 @@
   </section>
 
   <!-- ✅ MORE SERVICES SECTION -->
-  <section class="py-10 px-4 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-bold text-center mb-8">More Services We Offer</h2>
+  <section class="py-10 px-4 max-w-6xl mx-auto content-section">
+    <h2 class="text-2xl font-bold text-center mb-8 text-black">More Services We Offer</h2>
     <div class="space-y-10 text-black">
       <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
         <img src="HELBLOAN.jpg" alt="HELB Assistance" class="w-full md:w-1/2 h-64 object-cover">
@@ -123,10 +117,7 @@
   <div class="fixed bottom-5 right-5 z-50">
     <a href="https://wa.me/254114549423" target="_blank"
        class="bg-green-500 text-white px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 hover:bg-green-600">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-        <path d="M20.52 3.48A11.92 11.92 0 0012 0C5.373 0 0 5.373 0 12c0 2.108.55 4.076 1.512 5.793L0 24l6.438-1.483A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12a11.92 11.92 0 00-3.48-8.52zM12 22c-1.806 0-3.493-.47-4.96-1.294l-.352-.204-3.82.88.81-3.758-.23-.366A9.963 9.963 0 012 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.482-7.318l-1.566-.447a1.03 1.03 0 00-1.007.264l-.781.795a8.175 8.175 0 01-3.966-3.966l.794-.781a1.03 1.03 0 00.265-1.007l-.447-1.566a1.03 1.03 0 00-.98-.72c-.542 0-1.017.417-1.078.956-.25 2.164 1.265 4.745 2.867 6.347 1.602 1.602 4.183 3.117 6.347 2.867a1.03 1.03 0 00.956-1.078 1.03 1.03 0 00-.72-.98z"/>
-      </svg>
-      <span>Chat on WhatsApp</span>
+      Chat on WhatsApp
     </a>
   </div>
 
