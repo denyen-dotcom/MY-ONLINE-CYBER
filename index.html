@@ -46,13 +46,54 @@
   <div class="overlay"></div>
   
   <!-- Your website content goes here -->
- <!-- Heading section with full green background -->
-<div style="background-color:#16a34a; padding:40px; text-align:center; color:white;">
-  <h1 style="margin:0; font-size:2.5rem; font-weight:bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+<!-- Heading section with bursting flowers -->
+<div style="background-color:#16a34a; padding:60px 20px; text-align:center; color:white; position:relative; overflow:hidden;">
+  
+  <!-- Firework/Bursting flower animations -->
+  <div class="burst"></div>
+  <div class="burst delay1"></div>
+  <div class="burst delay2"></div>
+
+  <!-- The text -->
+  <h1 style="margin:0; font-size:2.5rem; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.6); position:relative; z-index:10;">
     Welcome to Denno Cyber Café,<br>
     Right Outside Mama Ngina University
   </h1>
 </div>
+
+<style>
+/* Bursting effect */
+.burst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow:
+    0 -40px 0 4px #fff,
+    28px -28px 0 4px #ff69b4,
+    40px 0 0 4px #ffd700,
+    28px 28px 0 4px #00ffcc,
+    0 40px 0 4px #ff4500,
+    -28px 28px 0 4px #9400d3,
+    -40px 0 0 4px #1e90ff,
+    -28px -28px 0 4px #32cd32;
+  transform: scale(0);
+  animation: burst 2s ease-out infinite;
+}
+
+.burst.delay1 { animation-delay: 0.6s; }
+.burst.delay2 { animation-delay: 1.2s; }
+
+@keyframes burst {
+  0% { transform: scale(0); opacity: 1; }
+  70% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+</style>
+
 
 
 </body>
@@ -187,6 +228,7 @@ s0.parentNode.insertBefore(s1,s0);
 
 </body>
 </html>
+
 
 
 
