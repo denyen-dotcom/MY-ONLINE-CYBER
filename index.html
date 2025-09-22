@@ -17,162 +17,118 @@
   <meta name="twitter:title" content="Denno Cyber Café" />
   <meta name="twitter:description" content="Fast Internet, Reliable Services, Right Outside Mama Ngina University" />
   <meta name="twitter:image" content="https://denyen-dotcom.github.io/MY-ONLINE-CYBER/HELBLOAN.jpg" />
-</head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <title>Denno Online Cyber Services</title>
   <meta name="description" content="Denno Yen Cyber, Online Cyber Services in Kenya - HELB application, NSSF, SHA registration, photo editing, design, printing & more.">
   <meta name="keywords" content="Denno yen Cyber, online cyber, Kenya cyber services, HELB, NSSF, SHA, document printing, Denno Cyber">
 
   <script src="https://cdn.tailwindcss.com"></script>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-attachment: fixed;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-    /* Sharper, stronger blue gradient */
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    /* Firework effect */
+    .burst {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      border-radius: 50%;
+      box-shadow:
+        0 -40px 0 4px #fff,
+        28px -28px 0 4px #ff69b4,
+        40px 0 0 4px #ffd700,
+        28px 28px 0 4px #00ffcc,
+        0 40px 0 4px #ff4500,
+        -28px 28px 0 4px #9400d3,
+        -40px 0 0 4px #1e90ff,
+        -28px -28px 0 4px #32cd32;
+      transform: scale(0);
+      animation: burst 2s ease-out infinite;
+    }
+    .burst.delay1 { animation-delay: 0.6s; }
+    .burst.delay2 { animation-delay: 1.2s; }
 
-    background-attachment: fixed;
-    color: white; /* Keeps text visible */
-    font-family: Arial, sans-serif;
-  }
-</style>
-<body>
-  <div class="overlay"></div>
-  
-  <!-- Your website content goes here -->
-<!-- Heading section with bursting flowers -->
-<div style="background-color:#16a34a; padding:60px 20px; text-align:center; color:white; position:relative; overflow:hidden;">
-  
-  <!-- Firework/Bursting flower animations -->
-  <div class="burst"></div>
-  <div class="burst delay1"></div>
-  <div class="burst delay2"></div>
-
-  <!-- The text -->
-  <h1 style="margin:0; font-size:2.5rem; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.6); position:relative; z-index:10;">
-    Welcome to Denno Cyber Café,<br>
-    Right Outside Mama Ngina University
-  </h1>
-</div>
-
-<style>
-/* Bursting effect */
-.burst {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  background: transparent;
-  border-radius: 50%;
-  box-shadow:
-    0 -40px 0 4px #fff,
-    28px -28px 0 4px #ff69b4,
-    40px 0 0 4px #ffd700,
-    28px 28px 0 4px #00ffcc,
-    0 40px 0 4px #ff4500,
-    -28px 28px 0 4px #9400d3,
-    -40px 0 0 4px #1e90ff,
-    -28px -28px 0 4px #32cd32;
-  transform: scale(0);
-  animation: burst 2s ease-out infinite;
-}
-
-.burst.delay1 { animation-delay: 0.6s; }
-.burst.delay2 { animation-delay: 1.2s; }
-
-@keyframes burst {
-  0% { transform: scale(0); opacity: 1; }
-  70% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(1.4); opacity: 0; }
-}
-</style>
-
-
-
-</body>
-
+    @keyframes burst {
+      0% { transform: scale(0); opacity: 1; }
+      70% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+  </style>
 </head>
 <body>
+  <!-- Heading section with fireworks -->
+  <div style="background-color:#16a34a; padding:60px 20px; text-align:center; color:white; position:relative; overflow:hidden;">
+    <div class="burst"></div>
+    <div class="burst delay1"></div>
+    <div class="burst delay2"></div>
 
-  <!-- <!-- 🔵 HERO SECTION WITH VIDEO BACKGROUND -->
-<div class="relative h-[500px] overflow-hidden">
-  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-0">
-    <source src="BlueModernVideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- 🙋🏽‍♂️ Your Photo Top-Right -->
-  <div class="absolute top-4 right-4 z-20">
-    <img src="Cyberflayer.jpg" alt="Denno Yen" class="w-16 h-16 rounded-full border-2 border-white shadow-md"/>
+    <h1 style="margin:0; font-size:2.5rem; font-weight:bold; text-shadow:2px 2px 6px rgba(0,0,0,0.6); position:relative; z-index:10;">
+      Welcome to Denno Cyber Café,<br>
+      Right Outside Mama Ngina University
+    </h1>
   </div>
-  <!-- 🛠️ SERVICES SECTION -->
-<!-- Glossy Photo Printing Section -->
-<section class="py-16 bg-white">
-  <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">
-    Glossy A4 Photo Printing
-  </h2>
-  <p class="text-center text-lg text-gray-600 mb-10">
-    Capture your best moments in crystal-clear glossy prints — 
-    <span class="font-bold text-green-600">just 40 bob per photo!</span>
-  </p>
 
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
-    <!-- Photo 1 -->
-    <div class="overflow-hidden rounded-xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" 
-           alt="Glossy Print 1" 
-           class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
-    </div>
-    
-   <!-- Photo 2 (Circle - NEW IMAGE) -->
-    <div class="flex justify-center items-center">
-      <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600&h=600&fit=crop" 
-           alt="Glossy Print 2 (Circle)" 
-           class="w-60 h-60 rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-500">
-    </div>
-    <!-- Photo 3 (Angled) -->
-    <div class="overflow-hidden shadow-lg" 
-         style="clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);">
-      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600" 
-           alt="Glossy Print 3" 
-           class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
+  <!-- 🔵 HERO SECTION WITH VIDEO BACKGROUND -->
+  <div class="relative h-[500px] overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover z-0">
+      <source src="BlueModernVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- 🙋🏽‍♂️ Your Photo Top-Right -->
+    <div class="absolute top-4 right-4 z-20">
+      <img src="Cyberflayer.jpg" alt="Denno Yen" class="w-16 h-16 rounded-full border-2 border-white shadow-md"/>
     </div>
 
-    <!-- Photo 4 -->
-    <div class="overflow-hidden rounded-2xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" 
-           alt="Glossy Print 4" 
-           class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
+    <!-- Overlay Text -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white z-10 text-center px-4 pt-16 md:pt-24">
+      <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">
+        Welcome to Denno Cyber Café
+      </h1>
     </div>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/68d197c7f2621819237b4da1/1j5pbhpap';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
   </div>
-</section>
 
+  <!-- 🖼️ Glossy Photo Printing Section -->
+  <section class="py-16 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">
+      Glossy A4 Photo Printing
+    </h2>
+    <p class="text-center text-lg text-gray-600 mb-10">
+      Capture your best moments in crystal-clear glossy prints — 
+      <span class="font-bold text-green-600">just 40 bob per photo!</span>
+    </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto">
+      <div class="overflow-hidden rounded-xl shadow-lg">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600" class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="flex justify-center items-center">
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600&h=600&fit=crop" class="w-60 h-60 rounded-full object-cover shadow-lg hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="overflow-hidden shadow-lg" style="clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=600" class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
+      </div>
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" class="w-full h-60 object-cover hover:scale-110 transition-transform duration-500">
+      </div>
+    </div>
+  </section>
 
   <!-- ✅ MORE SERVICES SECTION -->
   <section class="py-10 px-4 bg-blue-800 text-white">
     <h2 class="text-2xl font-bold text-center mb-8 text-black">More Services We Offer</h2>
     <div class="space-y-10 text-black">
       <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
-        <img src="HELBLOAN.jpg" alt="HELB Assistance" class="w-full md:w-1/2 h-64 object-cover">
+        <img src="HELBLOAN.jpg" class="w-full md:w-1/2 h-64 object-cover">
         <div class="p-6 flex flex-col justify-center">
           <h3 class="text-xl font-semibold mb-2">HELB Application Assistance</h3>
           <p>We guide students through HELB loan application, appeals, and updates. Stress-free and fast.</p>
@@ -180,7 +136,7 @@ s0.parentNode.insertBefore(s1,s0);
       </div>
 
       <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
-        <img src="MOVIESHOP.jpg" alt="Movie Shop" class="w-full md:w-1/2 h-64 object-cover">
+        <img src="MOVIESHOP.jpg" class="w-full md:w-1/2 h-64 object-cover">
         <div class="p-6 flex flex-col justify-center">
           <h3 class="text-xl font-semibold mb-2">Movie Shop</h3>
           <p>Enjoy a variety of movies, series, music videos and more — all copied fast at your convenience.</p>
@@ -188,7 +144,7 @@ s0.parentNode.insertBefore(s1,s0);
       </div>
 
       <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
-        <img src="TYPING.webp" alt="Typing Services" class="w-full md:w-1/2 h-64 object-cover">
+        <img src="TYPING.webp" class="w-full md:w-1/2 h-64 object-cover">
         <div class="p-6 flex flex-col justify-center">
           <h3 class="text-xl font-semibold mb-2">Typing & Formatting</h3>
           <p>We help with typed assignments, reports, and projects. Proper formatting and fast delivery.</p>
@@ -196,7 +152,7 @@ s0.parentNode.insertBefore(s1,s0);
       </div>
 
       <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
-        <img src="b.jpg" alt="CV Writing" class="w-full md:w-1/2 h-64 object-cover">
+        <img src="b.jpg" class="w-full md:w-1/2 h-64 object-cover">
         <div class="p-6 flex flex-col justify-center">
           <h3 class="text-xl font-semibold mb-2">CV & Cover Letter Writing</h3>
           <p>Stand out with a professional CV and cover letter — we design, type, and format for job readiness.</p>
@@ -218,34 +174,19 @@ s0.parentNode.insertBefore(s1,s0);
     &copy; 2025 Denno Cyber Café. All rights reserved.
   </footer>
 
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/68d197c7f2621819237b4da1/1j5pbhpap';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
