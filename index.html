@@ -9,30 +9,37 @@
   <meta name="keywords" content="Denno yen Cyber, online cyber, Kenya cyber services, HELB, NSSF, SHA, document printing, Denno Cyber">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+ <style>
   body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
 
-    background: url("BACK.jpg") center/cover no-repeat fixed;
-    color: white;
-    position: relative;
-    z-index: 0;
+    background-image: url("BACK.jpg"); /* Make sure Amazing.jpeg is in same folder as index.html */
+    background-size: cover;   /* Makes it stretch nicely */
+    background-position: center; /* Centers it */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps it still when scrolling */
+    color: white; /* Keeps text visible */
   }
 
-  /* Overlay for clarity */
-  body::before {
-    content: "";
+  /* Optional dark overlay if text is hard to read */
+  .overlay {
+    background: rgba(0,0,0,0.3); /* Light shading */
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust 0.35 → lighter/darker */
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: -1;
   }
 </style>
+
+<body>
+  <div class="overlay"></div>
+  
+  <!-- Your website content goes here -->
+  <h1 style="text-align:center; padding:40px;">Welcome to Denno Cyber Café</h1>
+</body>
+
 </head>
 <body>
 
@@ -150,6 +157,7 @@
 
 </body>
 </html>
+
 
 
 
